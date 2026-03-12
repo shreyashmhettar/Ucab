@@ -103,4 +103,106 @@ Controller
 
 ---
 
-# Project Structure
+##  Steps for Execution
+
+Follow the steps below to run the **UCAB Cab Booking Application** locally.
+
+---
+
+###  Setup Frontend (React Application)
+
+Open a terminal and navigate to the **frontend** folder:
+
+```bash
+cd frontend
+```
+
+Install all required dependencies:
+
+```bash
+npm install
+```
+
+Start the React development server:
+
+```bash
+npm run dev
+```
+
+The frontend application will start running at:
+
+```
+http://localhost:5173
+```
+
+---
+
+###  Setup Backend (Express Server)
+
+Open a new terminal window and navigate to the **backend** folder:
+
+```bash
+cd backend
+```
+
+Install backend dependencies:
+
+```bash
+npm install
+```
+
+---
+
+###  Configure Environment Variables
+
+Inside the **backend** folder create a file named:
+
+```
+.env
+```
+
+Add the following environment variables inside the `.env` file:
+
+```
+MONGO_URI=mongodb://localhost:27017/ucab_database
+PORT=8000
+```
+
+---
+
+###  Start Backend Server
+
+Run the backend server using:
+
+```bash
+nodemon server.js
+```
+
+or
+
+```bash
+npm start
+```
+
+The backend server will run at:
+
+```
+http://localhost:8000
+```
+
+---
+
+### Run the Application
+
+Once both frontend and backend servers are running:
+
+1. Open your browser  
+2. Navigate to:
+
+```
+http://localhost:5173
+```
+
+3. Register or login  
+4. Enter pickup and drop location  
+5. Book a cab and track your ride
